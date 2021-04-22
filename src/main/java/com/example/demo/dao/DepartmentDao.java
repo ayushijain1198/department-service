@@ -11,5 +11,6 @@ public interface DepartmentDao extends MongoRepository<Department,String> {
     @Query
     public Department getDepartmentByEmployeeName(String employeeName);
 
-
+    @Query
+    public Department getDepartmentByDepartmentName(String departmentName);
 }
